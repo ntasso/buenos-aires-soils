@@ -5,14 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Supplementary Material</title>
   <style>
+    :root {
+      --main-color: #AB2847;
+    }
+
     body {font-family: Arial; margin:0; background:#f5f7fb; color:#222}
     .container{max-width:1100px;margin:auto;padding:30px}
-    .hero{background:#123b6d;color:white;padding:30px;border-radius:16px}
+
+    .hero{
+      background: var(--main-color);
+      color:white;
+      padding:40px 30px 30px;
+      border-radius:16px;
+      text-align:center;
+      position:relative;
+    }
+
+    .hero-logo{
+      position:absolute;
+      top:-50px;
+      left:50%;
+      transform:translateX(-50%);
+      background:white;
+      padding:12px;
+      border-radius:12px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    .hero-logo img{
+      max-width:120px;
+      display:block;
+    }
+
+    .hero img{
+      max-width:120px;
+      margin-bottom:15px;
+    }
+
     .section{margin-top:30px}
     .card{background:white;padding:20px;border-radius:14px;box-shadow:0 5px 15px rgba(0,0,0,0.08)}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-    .btn{display:inline-block;padding:10px 15px;background:#123b6d;color:white;border-radius:999px;text-decoration:none;margin-top:10px}
-    .btn.secondary{background:#e6eef8;color:#123b6d}
+
+    .btn{
+      display:inline-block;
+      padding:10px 15px;
+      background: var(--main-color);
+      color:white;
+      border-radius:999px;
+      text-decoration:none;
+      margin-top:10px
+    }
+
+    .btn.secondary{background:#f0d6dd;color:var(--main-color)}
+
     .author{text-align:center}
     .author img{width:110px;height:110px;border-radius:50%;object-fit:cover;margin-bottom:10px}
   </style>
@@ -21,6 +66,9 @@
 <div class="container">
 
 <div class="hero">
+  <div class="hero-logo">
+    <img src="images/icsmge_logo.png" alt="ICSMGE Logo">
+  </div>
   <h1>Supplementary Material</h1>
   <p>Geotechnical spatial characterization of Buenos Aires City soils</p>
 </div>
