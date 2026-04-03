@@ -15,10 +15,15 @@
     .hero{
       background: var(--main-color);
       color:white;
-      padding:40px 30px 30px;
+      padding:50px 30px 30px;
       border-radius:16px;
       text-align:center;
-      position:relative;
+    }
+
+    .hero img{
+      max-width:120px;
+      margin-bottom:15px;
+      filter: brightness(0) invert(1);
     }
 
     .hero-logo{
@@ -66,9 +71,7 @@
 <div class="container">
 
 <div class="hero">
-  <div class="hero-logo">
-    <img src="images/icsmge_logo.png" alt="ICSMGE Logo">
-  </div>
+  <img src="images/icsmge_logo.png" alt="ICSMGE Logo">
   <h1>Supplementary Material</h1>
   <p>Geotechnical spatial characterization of Buenos Aires City soils</p>
 </div>
@@ -78,7 +81,7 @@
   <div class="card">
     <h2>Paper</h2>
     <p>Access the full publication and supplementary material.</p>
-    <a class="btn" href="#" target="_blank">View Paper</a>
+    <a class="btn" href="tasso-2026-buenos-aires-soils.pdf" target="_blank">View Paper</a>
   </div>
 </div>
 
@@ -86,16 +89,25 @@
 <div class="section">
   <h2>Interactive 3D Models</h2>
   <div class="grid">
+
     <div class="card">
-      <h3>Model 1</h3>
-      <p>Spatial distribution of geotechnical parameters.</p>
-      <a class="btn" href="#" target="_blank">Open Model</a>
+      <h3>Soil Colour (Descriptions)</h3>
+      <p>Observed soil colour extracted from borehole descriptions.</p>
+      <a class="btn" href="3dmodels/Color.html" target="_blank">Open Model</a>
     </div>
+
     <div class="card">
-      <h3>Model 2</h3>
-      <p>Stratigraphic interpretation.</p>
-      <a class="btn" href="#" target="_blank">Open Model</a>
+      <h3>SPT (N₁)₆₀</h3>
+      <p>Spatial distribution of corrected SPT values (N₁)₆₀.</p>
+      <a class="btn" href="3dmodels/SPT.html" target="_blank">Open Model</a>
     </div>
+
+    <div class="card">
+      <h3>Fissures</h3>
+      <p>Presence of fissures based on borehole descriptions.</p>
+      <a class="btn" href="3dmodels/Fisures.html" target="_blank">Open Model</a>
+    </div>
+
   </div>
 </div>
 
